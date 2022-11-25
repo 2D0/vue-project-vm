@@ -1,0 +1,128 @@
+// font ==============
+@font-face{
+	font-family:'NotoSansKR';
+	font-weight:100;
+	src:url('.././fonts/NotoSansKR-Thin.otf'),
+			url('.././fonts/NotoSansKR-Thin.woff'),
+			url('.././fonts/NotoSansKR-Thin.woff2');
+}
+@font-face{
+	font-family:'NotoSansKR';
+	font-weight:200;
+	src:url('.././fonts/NotoSansKR-Light.otf'),
+			url('.././fonts/NotoSansKR-Light.woff'),
+			url('.././fonts/NotoSansKR-Light.woff2');
+}
+@font-face{
+	font-family:'NotoSansKR';
+	font-weight:300;
+	src:url('.././fonts/NotoSansKR-Regular.otf'),
+			url('.././fonts/NotoSansKR-Regular.woff'),
+			url('.././fonts/NotoSansKR-Regular.woff2');
+}
+@font-face{
+	font-family:'NotoSansKR';
+	font-weight:400;
+	src:url('.././fonts/NotoSansKR-Medium.otf'),
+			url('.././fonts/NotoSansKR-Medium.woff'),
+			url('.././fonts/NotoSansKR-Medium.woff2');
+}
+@font-face{
+	font-family:'NotoSansKR';
+	font-weight:500;
+	src:url('.././fonts/NotoSansKR-Bold.otf'),
+			url('.././fonts/NotoSansKR-Bold.woff'),
+			url('.././fonts/NotoSansKR-Bold.woff2');
+}
+@font-face{
+	font-family:'NotoSansKR';
+	font-weight:600;
+	src:url('.././fonts/NotoSansKR-Black.otf'),
+			url('.././fonts/NotoSansKR-Black.woff'),
+			url('.././fonts/NotoSansKR-Black.woff2');
+}
+
+
+
+// reset ==============
+* {
+	font-family: 'NotoSansKR', sans-serif !important;
+	box-sizing: border-box;
+	margin: 0;
+  padding:0;
+	vertical-align: baseline;
+	font-weight:300;
+	color: #111;
+}
+
+input{
+	-webkit-appearance:none;
+}
+input:focus, select:focus, textarea:focus {
+	outline: none;
+}
+input[type=submit]{
+	//cursor: pointer;
+}
+label{
+	display:block;
+}
+textarea{
+	resize:none
+}
+
+button {
+	border: none;
+	background: none;
+	padding: 0;
+	cursor: pointer;
+	-webkit-appearance:none;
+}
+img{
+	display:block;
+}
+a {
+	color: #111;
+	text-decoration: none;
+	display: block;
+}
+a:hover {
+	cursor: pointer;
+}
+i{
+	font-style: normal;
+}
+ul,
+ol,
+li {
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+fieldset{
+	border:none;
+}
+legend{
+	font-size:0;
+	text-indent:-9999px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section,
+table, tbody, td {
+	display: block;
+}
+thead, tr{
+	display: flex;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button, input, optgroup, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
