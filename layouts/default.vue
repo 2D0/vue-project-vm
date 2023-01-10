@@ -3,9 +3,11 @@
       <!-- 헤더 시작 ====================== -->
       <header class="header">
           <div class="header--pc header__inner">
-            <NuxtLink to="/home" class="header__logo logo">
-              <img src="~assets/img/logo/logo-bar.svg" alt="민트오션">
-            </NuxtLink>
+            <h1 class="header__logo logo">
+              <NuxtLink to="/home">
+                <img src="~assets/img/logo/logo-color.svg" alt="메이크트리">
+              </NuxtLink>
+            </h1>
             <nav class="header__nav">
               <ul>
                 <li>
@@ -122,10 +124,10 @@
             <div class="footer__top">
               <div class="footer__left">
                 <div class="footer__logo logo">
-                  <img src="~assets/img/logo/logo-sky.svg" alt="민트오션">
+                  <img src="~assets/img/logo/logo-sky.svg" alt="메이크트리">
                 </div>
                 <div class="footer__leftTxt">
-                  소장과 투자가 모두 가능한 NFT 거래소
+                  비전이 가득한 메이크트리
                 </div>
               </div>
               <div class="footer__right">
@@ -166,13 +168,13 @@
             
             <div class="footer__info">
               <ul class="footer__infoList">
-                <li>주식회사 우주별</li>
-                <li>대표이사 : 곰돌이</li>
-                <li>사업자등록번호 : 123-45-67890</li>
-                <li>우주시 뿅뿅구 도로롱마을</li>
+                <li>메이크트리</li>
+                <li>대표 : 이다영</li>
+                <li>메일 : maketree0615@gmail.com</li>
+                <li>포트폴리오 사이트</li>
               </ul>
             </div>
-            <div class="footer__copy">Copyright © 2D0. All rights reserved.</div>
+            <div class="footer__copy">ⓒ 2023. MAKETREE all rights reserved.</div>
           </div>
 
           <div class="footer__mobile">
@@ -212,7 +214,7 @@
                 </NuxtLink>
               </div>
               <div class="footer__mobile--copy">
-                Copyright © 2D0. All rights reserved.
+                ⓒ 2023. MAKETREE all rights reserved.
               </div>
             </div>
           </div>
@@ -250,7 +252,7 @@
         data(){
           return{
             login       : true,   // 로그인 했을 시 on
-            userPhoto   : require('assets/./img/test/test-user.png'), // 로그인 시 유저 사진
+            userPhoto   : require('assets/./img/picture/dayoung-blue.png'), // 로그인 시 유저 사진
             userName    : 'front2d0', // 로그인 시 유저 이름
             closeMenu   : false,  // 사이드 메뉴 of off
             searchActive: false,  // 검색 on off

@@ -201,7 +201,6 @@
           :key="item.id"
         >
         <div class="card">
-
             <div class="card__inner">
                 <div class="card__itemState itemState">
                   <span class="itemState--start" v-if="item.itemState == '진행중'">진행중</span>
@@ -240,44 +239,44 @@
                   </button>
                 </div>
                 <NuxtLink to="/myPage/userItem/home" class="card__user page">
-                      <p class="card__userImg page__img page__shadowThin">
-                        <img :src="item.userImgUrl" :alt="item.userName">
-                      </p>
-                      <p class="card__userName">
-                        {{item.userName}}
-                      </p>
-                    </NuxtLink>
+                  <p class="card__userImg page__img page__shadowThin">
+                    <img :src="item.userImgUrl" :alt="item.userName">
+                  </p>
+                  <p class="card__userName">
+                    {{item.userName}}
+                  </p>
+                </NuxtLink>
                 <NuxtLink to="/marketPlace/detail" class="card__info">
-                      <p 
-                        v-if="item.itemState == '진행중'"
-                        class="card__time card__time--ing">
-                        {{item.itemTime}}
-                      </p>
-                      <p 
-                        v-else-if="item.itemState == '진행예정'"
-                        class="card__time card__time--soon">
-                        {{item.itemTime}}
-                      </p>
-                      <p 
-                        v-else-if="item.itemState == '종료임박'"
-                        class="card__time card__time--hurry">
-                        {{item.itemTime}}
-                      </p>
-                      <p 
-                        v-else-if="item.itemState == '종료'"
-                        class="card__time card__time--end">
-                        판매 종료된 아이템 입니다.
-                      </p>
-                      <p 
-                        v-else-if="item.itemState == ''"
-                        class="card__time card__time--infinity">
-                        팜매 기간이 없는 아이템 입니다.
-                      </p>
-                      <p class="card__price">
-                        {{item.itemPrice}}
-                        <span>KRW</span>
-                      </p>
-                    </NuxtLink>
+                  <p
+                    v-if="item.itemState == '진행중'"
+                    class="card__time card__time--ing">
+                    {{item.itemTime}}
+                  </p>
+                  <p
+                    v-else-if="item.itemState == '진행예정'"
+                    class="card__time card__time--soon">
+                    {{item.itemTime}}
+                  </p>
+                  <p
+                    v-else-if="item.itemState == '종료임박'"
+                    class="card__time card__time--hurry">
+                    {{item.itemTime}}
+                  </p>
+                  <p
+                    v-else-if="item.itemState == '종료'"
+                    class="card__time card__time--end">
+                    판매 종료된 아이템 입니다.
+                  </p>
+                  <p
+                    v-else-if="item.itemState == ''"
+                    class="card__time card__time--infinity">
+                    팜매 기간이 없는 아이템 입니다.
+                  </p>
+                  <p class="card__price">
+                    {{item.itemPrice}}
+                    <span>KRW</span>
+                  </p>
+                </NuxtLink>
               </div>
         </div>
         </Slide>
@@ -547,7 +546,7 @@
     data: () => ({
       // 프로필 기본 정보
       id                :0,                          // 초기 아이디 값
-      userImgUrl        :require('assets/./img/test/test-user.png'),// 아이템 이미지
+      userImgUrl        :require('assets/./img/picture/dayoung-blue.png'),// 아이템 이미지
       userName          :'front2d0',                 // 닉네임
       comment           :'공부가 취미입니다만?',          // 소개
       snsImgUrl         :require('assets/./img/test/test-card1.png'),// sns 이미지

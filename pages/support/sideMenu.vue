@@ -32,11 +32,6 @@
           new    :true,
         },
         {
-          name   :'민트오션 소식',
-          url    :'/support/board/news',
-          new    :true,
-        },
-        {
           name   :'수수료 안내',
           url    :'/support/search/detail',
           new    :false,
