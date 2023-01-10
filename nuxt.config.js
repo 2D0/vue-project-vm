@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: '[2d0 Vue]',
+    title: 'MAKETREE',
     htmlAttrs: {
       lang: 'ko'
     },
@@ -24,9 +24,16 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     // '~assets/scss/app.scss'
-    '~assets/scss/reset.scss',
-    '~assets/scss/style.scss',
-    '~assets/scss/test.scss'
+    '~assets/scss/common/reset.scss',
+    '~assets/scss/common/common.scss',
+    '~assets/scss/main.scss',
+    '~assets/scss/auction.scss',
+    '~assets/scss/join.scss',
+    '~assets/scss/login.scss',
+    '~assets/scss/marketPlace.scss',
+    '~assets/scss/myPage.scss',
+    '~assets/scss/support.scss',
+    '~assets/scss/system.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
