@@ -1,0 +1,274 @@
+/* 페이지 : 회원가입 페이지 ======================*/
+.join{
+
+  legend{
+    display:block;
+    font-size:0;
+    z-index:-9999px;
+  }
+  &__top{
+    text-align:center;
+
+    &--logo{
+      width:102px;
+      height:auto;
+      margin:0 auto 90px;
+    }
+    >h1{
+      font-size:25px;
+      font-weight:500;
+      color:#333;
+    }
+    &--noti{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:50px;
+      line-height: 50px;
+      border-radius:10px;
+      background:#EAF3F9;
+
+      >img{
+        width:15px;
+        height:17px;
+        margin-right:10px;
+      }
+      >span{}
+    }
+    &--txt{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:18px;
+      color:#555;
+
+      >img{
+        margin-right:10px;
+      }
+      >br{
+        display:none;
+      }
+    }
+    &--comment{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:20px;
+      font-weight:400;
+      color:#555;
+      text-align:center;
+      margin:20px 0 40px;
+    }
+    &--complete{
+      margin-bottom:50px;
+      font-size:25px;
+      font-weight:500;
+      text-align:center;
+      color:#333;
+    }
+  }
+  &__mid{
+
+    &__writeBox{
+
+    }
+  }
+  &__agree{
+    padding:20px 40px;
+    border-radius:10px;
+    overflow:hidden;
+    background:#F9F9F9;
+
+    &--inner{}
+  }
+  &__recapcha{
+
+    >img{
+      margin:0 auto;
+    }
+  }
+  &__btm{}
+  &__slide{
+
+    .hooper{
+      height:auto;
+    }
+    &--img{
+      width:100%;
+      height:100%;
+      position:relative;
+
+      >a{
+        display:block;
+        width:100%;
+        height:100%;
+        margin:0 auto;
+        position:relative;
+        overflow:hidden;
+
+        >img{
+          background:rgba(255, 124, 124);
+        }
+      }
+    }
+    &--inner{
+      width:71.43%;
+      height:auto;
+      margin:0 auto;
+      overflow: hidden;
+      //position:relative;
+
+      &:after{
+        content:'';
+        display:block;
+        padding-bottom:100%;
+      }
+      >img{
+        background:rgba(255, 124, 124);
+      }
+    }
+  }
+}
+
+
+
+
+/* ////////////////// 미디어 쿼리 970px ///////////////// */
+@media screen and (max-width:970px){
+  /* 페이지(970px) : 회원가입 ================= */
+  .join{
+
+    &__top{
+
+      >h1{
+        font-size:20px;
+      }
+
+      &--txt{
+
+        >span{
+          font-size:16px;
+        }
+      }
+    }
+  }
+}/* ///////////////// 미디어 쿼리 970px 끝 ////////////// */
+
+
+
+
+/* ////////////////// 미디어 쿼리 720px ///////////////// */
+@media screen and (max-width:720px){
+  /* 페이지(720px) : 회원가입 ================== */
+  .join{
+
+    &__top{
+
+      &--logo{
+        width:80px;
+      }
+      &--txt{
+        font-size:14px;
+
+        >img{
+          width:34px;
+        }
+      }
+      &--notiBar{
+        font-size:13px;
+      }
+      &--noti{
+
+        >span{
+          font-size:13px;
+        }
+      }
+    }
+  }
+}/* //////////////// 미디어 쿼리 720px 끝 /////////////// */
+
+
+
+
+/* ////////////////// 미디어 쿼리 500px ///////////////// */
+@media screen and (max-width:500px){
+  /* 페이지(500px) : 회원가입 =================== */
+  .join{
+
+    &__top{
+      &--logo{
+        width:50px;
+      }
+      >h1{
+        font-size:16px;
+      }
+      &--txt{
+        margin:20px 0 10px;
+        text-align: left;
+
+        >span{
+          font-size:14px;
+        }
+
+        >img{
+          width:25px;
+        }
+        >br{
+          display:block;
+        }
+      }
+      &--comment{
+        margin:20px 0;
+
+        >span{
+          font-size:16px;
+        }
+      }
+      &--noti{
+        height:40px;
+        line-height:40px;
+
+        >img{
+          width:10px;
+          margin-right:4px;
+        }
+        >span{
+          font-size:13px;
+        }
+      }
+      &--notiBar{
+        font-size:11px;
+
+        &:before{
+          height:10px;
+          margin-right:4px;
+        }
+      }
+    }
+    &__agree{
+      padding:20px 15px;
+
+      >h3{
+        font-size:15px;
+      }
+    }
+    &__slide{
+      margin-bottom:20px;
+
+      &--inner{
+        width:94%;
+
+        &:after{
+          //padding-bottom: 55.884%;
+        }
+      }
+      .slide{
+
+        &__btn{
+          display:none;
+        }
+      }
+    }
+  }
+}/* ///////////////// 미디어 쿼리 500px 끝 ////////////// */
+

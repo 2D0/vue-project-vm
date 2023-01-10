@@ -1,0 +1,135 @@
+/* 페이지 : 옥션 ============================= */
+.auction{
+  padding-bottom:90px;
+
+  &__ing{
+
+    &:last-child{
+      display:none;
+    }
+  }
+  &__soon{
+
+    &:nth-child(5){
+      display:none;
+    }
+    &:nth-child(6){
+      display:none;
+    }
+  }
+  &__end{
+
+    &:last-child{
+      display:none;
+    }
+  }
+  &__cont{
+    margin-bottom:90px;
+  }
+
+  .listPage{
+
+    &__cont{
+
+      &--tit{
+        width:155px;
+      }
+    }
+  }
+  .card{
+
+    &__inner{
+      //z-index:8;
+    }
+  }
+}
+
+
+
+/* ////////////////// 미디어 쿼리 970px ///////////////// */
+@media screen and (max-width:970px){
+  /* 페이지(970px) : 옥션 ===================== */
+  .auction{
+
+    &__ing{
+
+      &:last-child{
+        display:block;
+      }
+    }
+    &__soon{
+
+      &:nth-child(5){
+        display:block;
+      }
+      &:nth-child(6){
+        display:block;
+      }
+    }
+    &__end{
+
+      &:last-child{
+        display:block;
+      }
+    }
+    &__cont{
+      margin-bottom:80px;
+    }
+    .listPage{
+
+      &__cont{
+
+        &--tit{
+          width:130px;
+        }
+      }
+    }
+  }
+}/* ///////////////// 미디어 쿼리 970px 끝 ////////////// */
+
+
+
+
+/* ////////////////// 미디어 쿼리 768px ///////////////// */
+@media screen and (max-width:768px){
+  /* 페이지(768px) : 옥션 ===================== */
+  .auction{
+
+    &__ing{
+
+      &:last-child{
+        display:none;
+      }
+    }
+    &__end{
+
+      &:last-child{
+        display:none;
+      }
+    }
+  }
+}/* ///////////////// 미디어 쿼리 768px 끝 ////////////// */
+
+
+
+
+/* ////////////////// 미디어 쿼리 500px ///////////////// */
+@media screen and (max-width:500px){
+  /* 페이지(500px) : 옥션 ======================*/
+  .auction{
+
+    &__cont{
+      margin-bottom:40px;
+      padding: 40px 0 !important;
+    }
+    &.listPage{
+
+      .page{
+
+        &__search{
+          margin-bottom:10px;
+        }
+      }
+    }
+  }
+}/* ///////////////// 미디어 쿼리 500px 끝 ////////////// */

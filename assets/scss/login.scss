@@ -1,0 +1,116 @@
+/* 페이지 : 로그인 페이지 ======================*/
+.login{
+  &__check{
+    display:flex;
+    justify-content:space-between;
+
+    >div{
+      width:auto;
+    }
+    label{
+
+      >span{
+        white-space:nowrap;
+      }
+    }
+  }
+  &__find{
+
+    &--pass{
+      padding:10px 0;
+      white-space:nowrap;
+    }
+  }
+  &__top{
+
+    &--noti{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:50px;
+      line-height: 50px;
+      border-radius:10px;
+      background:#EAF3F9;
+      margin:20px 0 40px;
+
+      >img{
+        width:15px;
+        height:17px;
+        margin-right:10px;
+      }
+      >span{}
+    }
+    &--notiBar{
+      display:flex;
+      align-items:center;
+
+      >em{
+        display:block;
+        width:1px;
+        height:15px;
+        background:#555;
+        margin:0 10px;
+      }
+    }
+  }
+}
+
+
+
+
+/* ////////////////// 미디어 쿼리 720px ///////////////// */
+@media screen and (max-width:720px){
+  /* 페이지(720px) : 로그인 =================== */
+  .login{
+    .agreeLayout{
+
+      &__btns{
+        width:100%;
+      }
+    }
+    &__top{
+      &--noti{
+        display:flex;
+        flex-direction:column-reverse;
+        height:auto;
+        padding:10px 0;
+        margin-top:10px;
+        line-height:1.5em;
+      }
+      &--notiBar{
+        margin-top:5px;
+
+        >img{
+          width:13px;
+        }
+        >em{
+          height:12px;
+        }
+      }
+    }
+  }
+}/* //////////////// 미디어 쿼리 720px 끝 /////////////// */
+
+
+
+
+/* ////////////////// 미디어 쿼리 500px ///////////////// */
+@media screen and (max-width:500px){
+  /* 페이지(500px) : 로그인 ==================== */
+  .login{
+
+    &__find{
+
+      &--pass{
+        font-size:13px;
+      }
+    }
+    &__top{
+
+      &--noti{
+        margin:20px 0;
+        font-size:14px;
+      }
+    }
+  }
+}/* ///////////////// 미디어 쿼리 500px 끝 ////////////// */

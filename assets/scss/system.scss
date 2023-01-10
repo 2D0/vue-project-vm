@@ -1,0 +1,151 @@
+/* 페이지 : 서비스 ========================== */
+.service{
+
+  >h1{
+    text-align:center;
+  }
+  &__content{
+    margin-top:70px;
+
+    >h2{
+      margin:50px 0 15px;
+
+      &:first-child{
+        margin-top:0;
+      }
+    }
+  }
+}
+
+/* 페이지 : 시스템 점검 ====================== */
+.systemPage{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  min-height: calc(100vh - 478px);
+
+  &__left{
+    width:420px;
+  }
+  &__right{}
+  &__write{
+
+    &--tit{
+      font-size:25px;
+      font-weight:500;
+    }
+    &--txt{
+      font-size:18px;
+      color:#555;
+      margin:40px 0;
+
+      >a{
+        display:inline;
+        text-decoration:underline;
+      }
+    }
+  }
+  &__img{
+    width:100%;
+    height:100%;
+    position:relative;
+
+    >div{
+      width:100%;
+      height:100%;
+      position:absolute;
+    }
+    &:after{
+      content:'';
+      display:block;
+      padding-bottom:95%;
+    }
+  }
+  &__btn{
+
+    >a{
+      display:flex;
+      font-size:15px;
+      padding-left:15px;
+      align-items:center;
+      margin-bottom:10px;
+
+      >img{
+        margin-right:10px;
+      }
+      &:last-child{
+        margin-bottom:0;
+      }
+    }
+  }
+}
+
+
+
+
+/* ///////////////// 미디어 쿼리 1400px //////////////// */
+@media screen and (max-width:1410px){
+  /* 페이지(1410px) : 시스템 점검 ============ */
+  .systemPage{
+    flex-direction:column;
+    gap:90px 0;
+  }
+}/* //////////////// 미디어 쿼리 1400px 끝 ///////////// */
+
+
+
+
+/* ////////////////// 미디어 쿼리 720px ///////////////// */
+@media screen and (max-width:720px){
+  /* 페이지(720px) : 시스템 점검 ============ */
+  .systemPage{
+    gap: 40px 0;
+
+    &__right{
+      padding:0 10px;
+      margin-bottom:20px;
+    }
+    &__left{
+      width:70%;
+    }
+    &__write{
+
+      &--tit{
+        font-size:20px;
+      }
+      &--txt{
+        margin: 20px 0;
+        font-size:15px;
+      }
+    }
+    &__btn{
+
+      >a{
+        width:100%;
+      }
+    }
+  }
+}/* //////////////// 미디어 쿼리 720px 끝 /////////////// */
+
+
+
+
+/* ////////////////// 미디어 쿼리 500px ///////////////// */
+@media screen and (max-width:500px){
+  /* 페이지(500px) : 서비스 ================ */
+  .service{
+
+    >h1{
+      font-size:20px;
+      font-weight:400;
+    }
+    &__content{
+      margin-top:30px;
+
+      >h2{
+        margin:30px 0 10px;
+        font-size:17px;
+      }
+    }
+  }
+}/* ///////////////// 미디어 쿼리 500px 끝 ////////////// */

@@ -1,0 +1,1287 @@
+/* 페이지 : 마이 NFT ========================= */
+.myPage{
+
+  &__info{
+    text-align:center;
+    margin-bottom:90px;
+  }
+  &__topProfile{
+    margin-bottom:40px;
+
+    >.myPage__profileImg{
+      width:200px;
+      margin-bottom:20px;
+    }
+  }
+  &__profileImg{
+    display:block;
+    width:300px;
+    height:100%;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+    position:relative;
+    background:#EAF3F9;
+
+    &:after{
+      content:"";
+      display:block;
+      padding-bottom:100%;
+    }
+    >div{
+      width:100%;
+      height:100%;
+      position:absolute;
+    }
+  }
+  &__img{
+    width:100%;
+    height:100%;
+    position:absolute;
+
+    >img{}
+    &--no{
+
+      >img{
+        width:86%;
+        height:auto;
+        top:initial;
+        bottom:0;
+        left:50%;
+        transform:translateX(-50%);
+      }
+    }
+  }
+  &__nickname{
+    font-size:30px;
+    font-weight:500;
+    text-align: center;
+  }
+  &__comment{
+    font-size:25px;
+  }
+  /* &__badgeBox{
+
+    &--tit{
+      font-size:20px;
+      font-weight:400;
+    }
+    &--inner{
+      display:flex;
+      height:126px;
+      justify-content: center;
+      align-items:flex-end;
+      position:relative;
+      border-radius: 10px;
+      background:#EAF3F9;
+
+      >ul{
+        >li{
+          width: calc(100% - 100px);
+
+        }
+      }
+    }
+  } */
+  &__badgeBox{
+
+    &--tit{
+      font-size:20px;
+      font-weight:400;
+    }
+    &--back{
+      height:126px;
+      position:relative;
+      border-radius: 10px;
+      background:#EAF3F9;
+    }
+    &--inner{
+      display:flex;
+      width:500px;
+      margin:0 auto;
+      justify-content: center;
+      align-items:flex-end;
+      position:relative;
+
+      >ul{
+        >li{
+          width: calc(100% - 100px);
+
+        }
+      }
+    }
+  }
+  &__badge{
+
+    .hooper-list{
+      padding-top:50px;
+
+      >ul{
+        height:50px;
+
+        >li{
+        }
+      }
+    }
+    &--inner{
+      display:flex;
+      gap:0 15px;
+      align-items: center;
+      justify-content: center;
+    }
+    &--img{
+      width:50px;
+      height:50px;
+      margin:0 auto;
+      //background:url('assets/img/picture/badge.svg') no-repeat;
+      background-size:cover;
+      position:relative;
+
+      >img{
+        width:27px;
+        height:27px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        transition:all .3s;
+      }
+      &.active{
+        //box-shadow: 0px 0px 1px 4px #35509E;
+        //border-radius: 10px;
+
+        >img{
+          width:40px;
+          height:40px;
+        }
+
+        .myPage__badge--count{
+          display:block;
+        }
+      }
+    }
+    &--nav{
+      width:100%;
+      position:absolute;
+      bottom:47px;
+      //transform:translateY(-50%);
+
+      .hooper{
+
+        &-prev{
+          left:-70px;
+        }
+        &-next{
+          right:-70px;
+        }
+      }
+    }
+    &--count{
+      display:none;
+      width:20px;
+      height:20px;
+      font-size:12px;
+      border-radius:50%;
+      position:absolute;
+      top:-30px;
+      left:50%;
+      transform:translate(-50%);
+      color:#fff;
+      background:#15B5EA;
+    }
+  }
+  &__badgeList{
+    display:grid;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    grid-template-columns:repeat(8, 1fr);
+    justify-content:space-between;
+
+    >li{
+      margin:0 auto;
+      cursor: pointer;
+    }
+  }
+  &__snsBox{
+    height:0;
+    overflow:hidden;
+    transition:all .3s;
+
+    &.active{
+      height:50px;
+    }
+  }
+  &__sns{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    grid-gap: 0 12px;
+    font-size:20px;
+
+    >li{
+      cursor:pointer;
+    }
+    &--img{
+      width:20px;
+      height:20px;
+      //margin-right:7px;
+
+      >img{
+        width:100%;
+        height:100%;
+      }
+    }
+    &--url{
+      font-size:16px;
+      line-height:1em;
+    }
+  }
+  &__editBtn{
+    text-align:center;
+    margin:0 auto;
+  }
+  &__nftMenu{}
+  &__tabMenu{
+    width:1000px;
+
+    &--tit{
+      grid-template-columns: repeat(4, 1fr);
+
+      &.user{
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    &--bar{}
+    &--active{}
+  }
+  &__item{
+
+  }
+  &__slide{
+
+    &.hooper{
+      width:1040px;
+      margin:0 auto 70px;
+      height:auto;
+
+      .hooper-list{
+        height:auto;
+        padding-bottom:36px;
+      }
+      >li{
+        height:auto;
+      }
+      .card{
+        padding:10px 25px 0 25px;
+
+        &:after{
+          box-shadow:-3px 3px 3px #fafafa, 7px 12px 18px #e3e3e3, -3px 3px 15px #e4e4e4;
+        }
+        &__inner{
+          width: calc(100% - 50px);
+        }
+      }
+      button{
+
+        >svg{
+          width:50px;
+          height:50px;
+          opacity:.3;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .hooper-prev{
+        left:-29px;
+      }
+      .hooper-next{
+        right:-29px;
+      }
+    }
+    .slide{
+      &__arrow{
+        >i{
+          height:20px;
+          background:#555;
+        }
+        &--top{
+          top:7px;
+        }
+        &--bottom{
+          bottom:8px;
+        }
+      }
+      &__btn{
+        margin-top:0;
+
+        >button{
+          width:50px;
+          height:50px;
+        }
+      }
+    }
+  }
+  &__noNft{
+    display:flex;
+    width:932px;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+    min-height:463px;
+    border-bottom:1px solid #ddd;
+    margin-bottom:90px;
+
+    &--txt{
+      font-size:20px;
+      color:#999;
+    }
+  }
+  &__nftBtn{
+
+    >a{
+      margin:0 auto;
+    }
+  }
+
+  // 프로필 수정
+  &__writeBox{
+    input{
+      padding:0;
+    }
+  }
+}
+
+.myNft{
+
+  &__btn{
+
+    &--sale{
+      display:flex;
+      justify-content:flex-end;
+      margin-top:40px;
+
+      >a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 20px;
+        font-size: 16px;
+        border-radius: 7px;
+        background: #0A75C2;
+        color: #fff;
+      }
+    }
+  }
+  .page{
+    &__top{
+    }
+  }
+  .page{
+
+    &__search{
+      display:flex;
+      flex-direction: row-reverse;
+      margin-bottom:40px;
+
+      &--user{
+        justify-content:center;
+
+        .page__search--inner{
+          width:500px;
+        }
+      }
+    }
+  }
+}
+
+/* 페이지 : 이용내역 ========================= */
+.usageHistory{
+
+  &__tabMenu{
+    width:1165px;
+
+    &--tit{
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+
+/* 페이지 : 정산관리 ========================= */
+.calcPage{
+
+  &__info{
+    margin-bottom:40px;
+
+    &--inner{
+      display:flex;
+      width:100%;
+      align-items:flex-start;
+      justify-content:space-between;
+      margin-bottom:20px;
+    }
+
+    &Left{
+      width:400px;
+    }
+    &Right{}
+  }
+  &__price{
+    display:flex;
+    align-items:flex-end;
+    justify-content: space-between;
+
+    &--tit{
+      font-size:20px;
+    }
+    &--num{
+      font-size:25px;
+      font-weight:500;
+
+      >span{
+        font-size:18px;
+        font-weight:500;
+        color:#666;
+      }
+    }
+    &--margin{
+      margin-left:45px;
+    }
+  }
+  &__btn{}
+
+  &__tabMenu{
+    width:466px;
+    margin-bottom:90px;
+
+    &--tit{
+      grid-template-columns:repeat(2, 1fr);
+    }
+  }
+  &__noti{
+    font-size:14px;
+    word-break: keep-all;
+  }
+}
+
+/* 페이지 : 정산관리 ========================= */
+.withdrawalPage{
+  &__top{
+    display:flex;
+    padding-bottom:40px;
+    align-items:center;
+    justify-content:center;
+    border-bottom:1px solid #ddd;
+
+    &--txt{
+      font-size:14px;
+      line-height:1.5em;
+      color:#999;
+    }
+    &--btn{}
+  }
+  &__content{
+
+    &--line{
+      border-bottom:1px solid #ddd;
+      margin-bottom:40px;
+    }
+    &--tit{}
+  }
+  &__choose{
+    padding:40px 0;
+    border-radius:10px;
+    background:#EAF3F9;
+    text-align:center;
+    margin-bottom:40px;
+
+    &--inner{
+      height:140px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+
+      &.height{
+        justify-content:space-between;
+      }
+    }
+    &--icon{
+      width:31px;
+      height:auto;
+      margin:0 auto 15px;
+
+      >img{
+        width:100%;
+        height:auto;
+
+        &.width{
+          width:25px;
+        }
+      }
+    }
+    &--txt{
+
+      >p{
+        color:#555;
+        line-height:1em;
+        word-break: keep-all;
+      }
+    }
+    &--subTxt{
+      font-size:14px;
+      margin-top:10px;
+    }
+    &--complete{}
+    &--btn{
+      margin:0 auto;
+      background:#fff;
+    }
+  }
+  &__writeBox{
+
+    &--tit{}
+    &--btn{
+      margin:0 auto;
+    }
+  }
+  &__btn{
+
+    >input{
+      margin:0 auto;
+    }
+  }
+}
+
+
+
+/* ///////////////// 미디어 쿼리 1400px //////////////// */
+@media screen and (max-width:1410px){
+  /* 페이지(1410px) : 마이페이지 ============== */
+  .myPage{
+    &__tabMenu{
+      width:95%
+    }
+    &__slide{
+
+      .card{
+
+        &__topTit{
+          font-size:18px;
+        }
+        &__userName{
+          font-size:14px;
+        }
+        &__price{
+          font-size:20px;
+
+          >span{
+            font-size:14px;
+          }
+        }
+      }
+    }
+    &__noNft{
+      width:100%;
+      min-height:400px;
+      margin-bottom:40px;
+
+      &--txt{
+        font-size:18px;
+      }
+    }
+  }
+}/* //////////////// 미디어 쿼리 1400px 끝 ///////////// */
+
+
+
+/* ///////////////// 미디어 쿼리 1210px //////////////// */
+@media screen and (max-width:1210px){
+  /* 페이지(1210px) : 마이페이지 ============== */
+  .myPage{
+
+    &__slide{
+
+      &.hooper{
+        width:100%;
+      }
+
+    }
+  }
+
+  /* 페이지(1210px) : 이용내역 ================ */
+  .usageHistory{
+
+    &__tabMenu{
+      width:100%;
+    }
+  }
+}/* //////////////// 미디어 쿼리 1210px 끝 ///////////// */
+
+
+
+/* ////////////////// 미디어 쿼리 970px ///////////////// */
+@media screen and (max-width:970px){
+  /* 페이지(970px) : 마이페이지 =============== */
+  .myPage{
+
+    &__search{
+      width:100%;
+    }
+    &__info{
+      margin-bottom:40px;
+    }
+    &__profileImg{
+      width:30%;
+    }
+    &__nickname{
+      font-size:28px;
+    }
+    &__comment{
+      font-size:20px;
+    }
+    &__sns{
+
+      &--img{
+        width:22px;
+        height:22px;
+      }
+      &--url{
+        font-size:16px;
+      }
+    }
+    &__slide{
+
+      &.hooper{
+        margin:0 auto 20px;
+
+        .hooper{
+
+          &-prev{
+            left:-32px;
+          }
+          &-next{
+            right:-32px;
+          }
+        }
+        .slide{
+
+          &__btn{
+
+            >button{
+              display:none;
+            }
+          }
+          &__arrow{
+
+            >i{
+              height:16px;
+            }
+            &--top{
+              top:12px;
+            }
+            &--bottom{
+              bottom:13px;
+            }
+          }
+        }
+        .card{
+          padding: 3px 2vw 0 2vw;
+
+          &__inner{
+            width: calc(100% - 4vw);
+            padding:2vw;
+          }
+          &__info{
+            padding:3vw 0 0;
+          }
+        }
+      }
+    }
+    &__arrow{
+      >i{
+        height:16px;
+      }
+      &--top{
+        top:12px;
+      }
+      &--bottom{
+        bottom:12px;
+      }
+    }
+    &__tabMenu{
+      width:100%;
+    }
+    &__nftMenu{
+      width:90%;
+      margin:0 auto;
+    }
+  }
+
+  /* 페이지(970px) : 정산관리 ================= */
+  .calcPage{
+
+    &__tabMenu{
+      width:400px;
+      margin-bottom:40px;
+    }
+    &__price{
+
+      &--tit{
+        font-size:16px;
+      }
+      &--margin{
+        margin-left:36px;
+      }
+      &--num{
+        font-size:21px;
+
+        >span{
+          font-size:14px;
+        }
+      }
+    }
+    &__infoLeft{
+      width:300px;
+    }
+  }
+
+  /* 페이지 : 정산관리 ======================== */
+  .withdrawalPage{
+
+    &__content{
+
+      &--tit{
+        font-size:19px;
+      }
+    }
+  }
+}/* ///////////////// 미디어 쿼리 970px 끝 ////////////// */
+
+
+
+
+/* ////////////////// 미디어 쿼리 768px ///////////////// */
+@media screen and (max-width:768px){
+  /* 페이지(768px) : 마이페이지 ================ */
+  .myPage{
+
+    &__noNft{
+      margin-bottom:40px;
+    }
+    &__tabMenu{
+      width:100%
+    }
+    &__nftMenu{
+      width:90%;
+      margin:0 auto;
+    }
+    &__slide{
+      &.hooper{
+        .hooper{
+          &-next{
+            right:-44px;
+          }
+          &-prev{
+            left:-44px;
+          }
+        }
+      }
+      .slide{
+        &__arrow{
+          >i{
+            height:16px
+          }
+          &--top{
+            top: 12px;
+          }
+          &--bottom{
+            bottom: 13px;
+          }
+        }
+      }
+    }
+    &__badgeBox{
+
+      &--inner{
+        width:450px;
+      }
+      .hooper{
+
+        &-prev{
+          left:-8.5vw;
+        }
+        &-next{
+          right:-8.5vw;
+        }
+      }
+    }
+  }
+
+  /* 페이지(768px) : 정산관리 ================= */
+  .calcPage{
+
+    &__tabMenu{
+    }
+    &__price{
+
+      &--tit{
+      }
+      &--num{
+
+        >span{
+        }
+      }
+    }
+    &__infoLeft{
+    }
+  }
+}/* ///////////////// 미디어 쿼리 768px 끝 ////////////// */
+
+
+
+
+/* ////////////////// 미디어 쿼리 680px ///////////////// */
+@media screen and (max-width:680px){
+  /* 페이지(680px) : 마이페이지 ================ */
+  .myPage{
+
+    &__slide{
+
+      &.hooper{
+
+        .card{
+
+          &:after{
+            padding-bottom:150%;
+          }
+          &__name{
+            width: calc(100% - 32px);
+          }
+          &__info{
+            padding:1.5vw 0 0;
+          }
+          &__topTit{
+            font-size:15px;
+
+            >button{
+              height:40px;
+            }
+          }
+          &__userName{
+            font-size:12px;
+          }
+          &__price{
+            font-size:17px;
+
+            >span{
+              font-size:12px;
+            }
+          }
+        }
+      }
+    }
+    &__badgeBox{
+
+      &--inner{
+        width:400px;
+      }
+    }
+  }
+}/* //////////////// 미디어 쿼리 680px 끝 /////////////// */
+
+
+
+
+/* ////////////////// 미디어 쿼리 600px ///////////////// */
+@media screen and (max-width:600px){
+  /* 페이지(600px) : 마이페이지 ================ */
+  .myPage{
+
+    &__slide{
+
+      &.hooper{
+
+        .card{
+
+          &:after{
+            //padding-bottom:155.5%;
+          }
+        }
+      }
+    }
+    &__badgeBox{
+
+      &--inner{
+        width:400px;
+      }
+    }
+  }
+
+  /* 페이지(600px) : 정산관리 ================= */
+  .calcPage{
+    &__info{
+      &--inner{
+        flex-direction: column;
+        margin-bottom:12px;
+      }
+    }
+    &__infoRight{
+      width:100%;
+      margin-top:20px;
+      >a{
+        width:100%;
+      }
+    }
+    &__noti{
+      font-size:12px;
+    }
+  }
+}/* ///////////////// 미디어 쿼리 600px 끝 ////////////// */
+
+
+
+/* ////////////////// 미디어 쿼리 500px ///////////////// */
+@media screen and (max-width:500px){
+  /* 페이지(500px) : 마이 페이지 =============== */
+  .myPage{
+
+    &__info{
+      margin-bottom:20px;
+    }
+    &__topProfile{
+
+      >.myPage__profileImg{
+        width:150px;
+        margin-bottom:20px;
+      }
+    }
+    &__profileImg{
+      width:42%;
+    }
+    &__nickname{
+      font-size:21px;
+    }
+    &__comment{
+      font-size:16px;
+    }
+    &__snsBox{
+
+      &.active{
+        height:45px;
+      }
+    }
+    &__sns{
+      &--url{
+        font-size:14px;
+      }
+      &--img{
+        width:20px;
+        height:20px;
+      }
+    }
+    &__badge{
+
+      &--nav{
+        display:none;
+      }
+      &--img{
+
+        &.active{
+
+          >img{
+            width:25px;
+            height:25px;
+          }
+        }
+        >img{
+          width:20px;
+          height:20px;
+        }
+      }
+    }
+    &__badgeBox{
+
+      &--inner{
+        width:340px;
+      }
+    }
+    &__editBtn{
+      margin:20px auto 0;
+    }
+    &__tabMenu{
+
+      .tabMenu{
+        &__tit{
+          >li{
+            >button{
+              height:70px;
+              font-size:14px;
+
+              >img{
+                width:24px;
+                margin-bottom:3px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__noNft{
+      min-height:300px;
+      margin-bottom:25px;
+
+      &--txt{
+        font-size:16px;
+      }
+    }
+    &__nftMenu{
+      width:100%;
+
+      .slide__btn{
+        display:none;
+      }
+    }
+    &__slide{
+
+      &.hooper{
+
+        .hooper{
+
+          &-list{
+            padding-bottom:20px;
+          }
+        }
+        .card{
+          padding: 3px 4vw 0 4vw;
+
+          &:after{
+            padding-bottom:144.5%;
+          }
+          &__inner{
+            width: calc(100% - 18vw);
+            left: 50%;
+            transform: translateX(-50%);
+            padding:0;
+          }
+          &__topImg{
+            margin: 5vw auto 0;
+          }
+          &__itemState{
+
+            >span{
+              width:90px;
+              height:23px;
+              line-height:23px;
+              font-size:14px;
+              top:11px;
+            }
+          }
+          &__name{
+            width: calc(100% - 35px);
+            font-size:17px;
+          }
+          &__topTit{
+            font-size:19px;
+            padding:12px 0;
+
+            >a{
+              font-size:16px;
+              padding:0 10px;
+            }
+            >button{
+              height:45px;
+
+              &.btn{
+
+                &__ico{
+
+                  img{
+
+                    width:18px;
+                  }
+                }
+              }
+            }
+          }
+          &__user{
+          }
+          &__userImg{
+            width:21px;
+            height:21px;
+          }
+          &__userName{
+            font-size:13px;
+          }
+          &__info{
+            padding:7vw 0 0;
+          }
+          &__time{
+            font-size:13px;
+          }
+          &__price{
+            font-size:18px;
+            >span{
+              font-size:13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* 페이지(500px) : 마이 NFT ================ */
+  .myNft{
+    &__btn{
+
+      &--sale{
+
+        >a{
+          width:100%;
+        }
+      }
+    }
+    .page{
+      &__top{
+        width:100%;
+        flex-direction:column;
+      }
+      &__search{
+        width:100%;
+        margin-bottom:20px;
+      }
+    }
+  }
+
+  /* 페이지(500px) : 정산관리 ================= */
+  .calcPage{
+
+    &__tabMenu{
+      width: 100%;
+      margin-bottom:20px;
+    }
+    &__infoLeft{
+      width:78%;
+      margin:0 auto;
+    }
+    &__price{
+
+      &--tit{
+        font-size:14px;
+      }
+      &--margin{
+        margin-left:33px;
+      }
+      &--num{
+        font-size:16px;
+
+        >span{
+          font-size:12px;
+        }
+      }
+    }
+  }
+
+  /* 페이지 : 정산관리 ======================== */
+  .withdrawalPage{
+
+    &__content{
+
+      &--tit{
+        font-size:16px;
+      }
+    }
+    &__choose{
+      margin-bottom:20px;
+      padding:20px;
+
+      &--txt{
+
+        >p{
+          line-height:1.2em;
+          font-size:14px;
+        }
+      }
+      &--subTxt{
+        font-size:12px !important;
+      }
+      &--icon{
+        width:23px;
+      }
+      &--complete{
+        font-size:14px;
+      }
+    }
+    &__btn{
+
+      >input{
+        width:100%;
+      }
+    }
+  }
+}/* ///////////////// 미디어 쿼리 500px 끝 ////////////// */
+
+
+
+
+/* ////////////////// 미디어 쿼리 400px ///////////////// */
+@media screen and (max-width:400px){
+  /* 페이지(400px) : 마이페이지 ================ */
+  .myPage{
+
+    &__badgeBox{
+
+      &--inner{
+        width:250px;
+      }
+    }
+    &__slide{
+
+      &.hooper{
+
+        /* .card{
+
+          &__name{
+            width: calc(100% - 20px);
+            font-size:13px;
+          }
+          &__topTit{
+            font-size:15px;
+            padding:5px 0;
+
+            >button{
+              height:35px;
+            }
+          }
+          &__user{
+            padding:0 10px;
+          }
+          &__userImg{
+            width:15px;
+            height:15px;
+          }
+          &__userName{
+            font-size:12px;
+          }
+          &__info{
+            padding:6vw 0 0;
+          }
+          &__time{
+            font-size:10px;
+          }
+          &__price{
+            font-size:13px;
+
+            >span{
+              font-size:10px;
+            }
+          }
+        } */
+      }
+    }
+  }
+}/* ///////////////// 미디어 쿼리 400px 끝 ////////////// */
