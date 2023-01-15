@@ -198,7 +198,7 @@ export default {
         url :'/support/board/notice'
       },
       {
-        name:'민트오션 소식',
+        name:'메이크트리 소식',
         url :'/support/board/news'
       },
       {

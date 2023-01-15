@@ -1,6 +1,6 @@
 {
-  "name": "mintocen",
-  "version": "1.0.0",
+  "name": "maketree",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",

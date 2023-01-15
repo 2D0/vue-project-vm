@@ -4,7 +4,7 @@
       <div class="modal__layout modalSubmit modal--mid">
         <div class="modalSubmit__inner modal__inner">
           <div class="join__top">
-            <img  class="join__top--logo page__margin--small" src="~assets/img/logo/logo-round.svg" alt="민트오션">
+            <img  class="join__top--logo page__margin--small" src="~assets/img/logo/logo-round.svg" alt="메이크트리">
             <div class="join__top--txt">
               <img src="~assets/img/icons/ico-http-no.svg" alt="http 금지">
               로그인하는 사이트의 주소가<br> 아래와 같은지 꼭 확인해주시기 바랍니다.
@@ -13,7 +13,7 @@
               <p class="login__top--notiBar">
                 <img src="~assets/img/icons/ico-login-rock.svg" alt="경고">
                 <em></em>
-                <span>http<i class="page__color--error">s</i>://www.mint-ocean.com</span>
+                <span>http<i class="page__color--error">s</i>://www.maketree.abc</span>
               </p>
               <span>자물쇠와 ‘<i class="page__color--error">s</i>’를 확인하세요.</span>
             </div>

@@ -42,7 +42,7 @@
                 <li><NuxtLink to="/join/home">회원가입</NuxtLink></li>
               </ul>
               <button class="header__app btn">
-                <span class="header__app--app btn--app btn--accept">민트오션 앱 다운로드</span>
+                <span class="header__app--app btn--app btn--accept">메이크트리 앱 다운로드</span>
               </button>
             </div>
 
@@ -82,7 +82,7 @@
             </button> -->
             <div class="side__mobile--logo">
               <NuxtLink to="/home">
-                <img src="~assets/img/logo/logo-bar.svg" alt="민트오션">
+                <img src="~assets/img/logo/logo-bar.svg" alt="메이크트리">
               </NuxtLink>
             </div>
             <div class="side__mobile--nav">

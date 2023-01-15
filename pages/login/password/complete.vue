@@ -1,7 +1,7 @@
 <template>
   <div class="join page container__inner--mid container__inner--padding">
     <div class="join__top container__inner--small">
-      <img  class="join__top--logo" src="~assets/img/logo/logo-round.svg" alt="민트오션">
+      <img  class="join__top--logo" src="~assets/img/logo/logo-round.svg" alt="메이크트리">
       <h1 class="join__top--complete">
           비밀번호 재설정이 완료되었습니다.
       </h1>

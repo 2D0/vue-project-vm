@@ -4,7 +4,7 @@
       <div class="support__sideMenu">
         <h1 class="page__tit--big">
           <!-- <span class="web">고객센터</span> -->
-          <span class="mobile">민트오션 소식</span>
+          <span class="mobile">메이크트리 소식</span>
         </h1>
         <SideMenu></SideMenu>
       </div>
@@ -97,24 +97,24 @@
       // nft 리스트
       noticeList: [
         {
-          title :'민트오션의 새로운 소식입니다.',
+          title :'메이크트리의 새로운 소식입니다.',
           date  :'2022.03.01',
           count :'3330',
           notice:true,
         },
         {
-          title :'민트오션의 새로운 소식입니다.',
+          title :'메이크트리의 새로운 소식입니다.',
           date  :'2022.03.01',
           count :'3330',
           notice:true,
         },
         {
-          title :'안녕하세요 민트오셥입니다. 감사합니다. 떙큐',
+          title :'안녕하세요 메이크트리입니다. 감사합니다. 떙큐',
           date  :'2022.03.01',
           count :'3330',
         },
         {
-          title :'안녕하세요 민트오셥입니다. 감사합니다. 떙큐',
+          title :'안녕하세요 메이크트리입니다. 감사합니다. 떙큐',
           date  :'2022.03.01',
           count :'3330',
         }

@@ -46,11 +46,11 @@
             <ul class="support__chatList--txtBox">
               <li class="support__chatList--txt">
                 <span class="support__chatList--num">3</span>
-                <span class="support__chatList--comment">검색창에 ＇민트오션＇을 검색합니다.</span>
+                <span class="support__chatList--comment">검색창에 ＇메이크트리＇을 검색합니다.</span>
               </li>
               <li class="support__chatList--txt">
                 <span class="support__chatList--num">4</span>
-                <span class="support__chatList--comment">민트오션 채널을 선택합니다.</span>
+                <span class="support__chatList--comment">메이크트리 채널을 선택합니다.</span>
               </li>
             </ul>
           </div>
@@ -61,7 +61,7 @@
             <ul class="support__chatList--txtBox">
               <li class="support__chatList--txt">
                 <span class="support__chatList--num">5</span>
-                <span class="support__chatList--comment">민트오션 채널을 추가하고 채팅하기 버튼을 클릭합니다.</span>
+                <span class="support__chatList--comment">메이크트리 채널을 추가하고 채팅하기 버튼을 클릭합니다.</span>
               </li>
             </ul>
           </div>

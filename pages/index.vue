@@ -40,14 +40,14 @@
           <div class="main__slide--right">
             <div class="main__slide--comment">
               <p>
-                민트 오션과 함께하는 NFT 수집
+                메이크트리과 함께하는 NFT 수집
               </p>
               <p>
                 내가 좋아하는 <span>유튜버</span>
               </p>
             </div>
             <div  @click="changeBack" class="main__slide--round">
-              오직 민트 오션만이 제공하는 차별화된 서비스
+              오직 메이크트리만이 제공하는 차별화된 서비스
             </div>
           </div>
           <client-only>
@@ -199,7 +199,7 @@
     <article class="main__btmBanner">
       <NuxtLink to="/marketPlace/list">
         <span class="main__btmBanner--inner container__inner--max">
-          <i class="main__btmBanner--txt">오직 민트오션에서만 만날 수 있는<br> 나만의 특별한 NFT</i>
+          <i class="main__btmBanner--txt">오직 메이크트리에서만 만날 수 있는<br> 나만의 특별한 NFT</i>
           <i class="main__btmBanner--btn">더 많은 작품 보러 가기</i>
         </span>
       </NuxtLink>

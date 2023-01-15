@@ -1,7 +1,7 @@
 <template>
   <div class="login page container__inner--mid container__inner--padding">
     <div class="join__top">
-      <img  class="join__top--logo" src="~assets/img/logo/logo-round.svg" alt="민트오션">
+      <img  class="join__top--logo" src="~assets/img/logo/logo-round.svg" alt="메이크트리">
       <h1 class="page__margin--small">비밀번호 재설정</h1>
       <div class="join__top--txt page__margin--mid">
         <span>계정으로 사용하고 있는 이메일 주소를 입력해 주세요.</span>

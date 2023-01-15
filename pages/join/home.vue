@@ -22,7 +22,7 @@
     >
     </ModalEmail>
     <div class="join__top">
-      <img  class="join__top--logo" src="~assets/img/logo/logo-round.svg" alt="민트오션">
+      <img  class="join__top--logo" src="~assets/img/logo/logo-round.svg" alt="메이크트리">
       <h1 class="page__margin--mid">회원가입</h1>
       <div class="join__top--noti page__margin--mid">
         <img src="~assets/img/icons/ico-hand.svg" alt="경고">
@@ -316,7 +316,7 @@
               </div>
               <div class="agreeLayout__ex">
                 개인 정보 제3자 제공 동의, 결제 대행 서비스 이용약관 등 모든 약관에 동의합니다.<br>
-                주식회사 민트 오션은 통신판매중개사로서 거래 당사자가 아니며, 사용자가 등록한 상품정보 및 거래에 대한 어떠한 책임도 지지 않습니다.
+                주식회사 메이크트리은 통신판매중개사로서 거래 당사자가 아니며, 사용자가 등록한 상품정보 및 거래에 대한 어떠한 책임도 지지 않습니다.
               </div><!-- seeAgree -->
             </div><!-- agreeLayout -->
           </div><!-- agreeLayout -->

@@ -165,7 +165,7 @@
     <article class="main__btmBanner">
       <NuxtLink to="/marketPlace/list">
         <span class="main__btmBanner--inner container__inner--max">
-          <i class="main__btmBanner--txt">오직 민트오션에서만 만날 수 있는<br> 나만의 특별한 NFT</i>
+          <i class="main__btmBanner--txt">오직 메이크트리에서만 만날 수 있는<br> 나만의 특별한 NFT</i>
           <i class="main__btmBanner--btn">더 많은 작품 보러 가기</i>
         </span>
       </NuxtLink>
@@ -204,7 +204,7 @@
           name:'nft 수집',
           img:require('assets/./img/banner/main-bn1.png'),
           txtTop:'풍선 터지듯 사라지는 일회성 덕질은 그만!',
-          txtBottom:'민트오션과 함께하는 NFT 수집',
+          txtBottom:'메이크트리과 함께하는 NFT 수집',
           moreUrl:'#',
           fontColor:'black',
         },
@@ -212,7 +212,7 @@
           name:'수수료 0원',
           img:require('assets/./img/banner/main-bn2.png'),
           txtTop:'세계 최초 수수료 0% NFT 거래소!',
-          txtBottom:'수수료 걱정 없는 민트오션',
+          txtBottom:'수수료 걱정 없는 메이크트리',
           moreUrl:'#',
           fontColor:'white',
         },
@@ -220,7 +220,7 @@
           name:'사용 가이드',
           img:require('assets/./img/banner/main-bn3.png'),
           txtTop:'이것만 보면 당신도 NFT 마스터',
-          txtBottom:'민트 오션 NFT 사용 가이드!',
+          txtBottom:'메이크트리 NFT 사용 가이드!',
           moreUrl:'#',
           fontColor:'black',
         },

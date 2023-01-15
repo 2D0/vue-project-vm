@@ -22,7 +22,7 @@
         </NuxtLink>
         <NuxtLink to="#" class="btn--bigMiddle btn--katalk">
           <img src="~assets/img/icons/ico-katalk-ch.svg" alt="플러스 친구">
-          민트 오션 플러스 친구 바로 가기
+          메이크트리 플러스 친구 바로 가기
         </NuxtLink>
       </div>
     </div><!-- systemPage__right -->

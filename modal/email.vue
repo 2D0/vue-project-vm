@@ -11,7 +11,7 @@
           >
             <span>닫기</span>
           </button>
-          <img class="join__top--logo page__margin--small" src="~assets/img/logo/logo-round.svg" alt="민트오션">
+          <img class="join__top--logo page__margin--small" src="~assets/img/logo/logo-round.svg" alt="메이크트리">
           <div class="page__margin--small">
             <h1 class="modalSubmit__tit">
               이메일 인증

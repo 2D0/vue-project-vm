@@ -1,11 +1,11 @@
 <template>
   <div class="join page container__inner--mid container__inner--padding">
     <div class="join__top container__inner--small">
-      <img  class="join__top--logo" src="~assets/img/logo/logo-round.svg" alt="민트오션">
+      <img  class="join__top--logo" src="~assets/img/logo/logo-round.svg" alt="메이크트리">
     </div>
       <h1 class="join__top--complete">
         수집과 투자가 모두 가능한 NFT 거래소<br>
-        민트 오션에 가입해 주셔서 진심으로 감사드립니다.
+        메이크트리에 가입해 주셔서 진심으로 감사드립니다.
       </h1>
     <div class="join__slide">
       <Hooper
